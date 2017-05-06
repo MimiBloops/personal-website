@@ -1,0 +1,33 @@
+#profilePicture {
+    margin-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile {
+    text-align: center;
+}
+
+#linkedin, #git {
+    font-size: 2.5em;
+}
+
+#cv {
+    margin-top: 1em;
+}
+
+.about, .skills {
+    margin-top: 3em;
+    margin-right: 10em;
+    margin-left: 10em;
+    text-align: justify;
+}
+
+.skill-Left {
+    float: left;
+}
+
+.skill-right {
+    float: right;
+}
