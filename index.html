@@ -12,14 +12,42 @@
     <script src="semantic/dist/semantic.min.js"></script>
 </head>
 <body>
-<div class="profile">
+<div id="nav">
+    <div class="ui secondary pointing menu">
+        <a>
+            <img src="assets/img/cv_cd.jpg" alt="CV de Claire Denis">
+        </a>
+        <a class="active item" href="#about">
+            A propos de moi
+        </a>
+        <a class="item" href="#skills">
+            Mes compétences
+        </a>
+        <a class="item" href="#achievements">
+            Mes réalisations
+        </a>
+        <a class="item" href="#experiencesSchooling">
+            Mes expériences
+        </a>
+        <a class="item" href="#experiencesSchooling">
+            Ma scolarité
+        </a>
+        <a class="item" href="#hoobies">
+            Centres d'intérêts
+        </a>
+        <a class="item" href="#contact">
+            Contact
+        </a>
+    </div>
+</div>
+<div id="profile">
     <img src="assets/img/profilePicture.jpg" class="ui medium circular image" id="profilePicture">
     <h1 class="ui header">Claire Denis</h1>
     <a href="https://www.linkedin.com/in/claire-denis-23a094106/"><i class="linkedin icon" id="linkedin"></i></a>
     <a href="https://github.com/mimimario"><i class="git icon" id="git"></i></a> </br>
     <button class="ui button" id="cv">Télécharger mon cv</button>
 </div>
-<div class="about">
+<div id="about">
     <h2 class="ui header">A propos de moi</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
         Donec hendrerit, elit convallis porta volutpat, dui ex placerat mi, ac accumsan nulla turpis in ex. Cras ac augue magna. Quisque ut bibendum augue.
@@ -31,7 +59,8 @@
         Aenean dignissim eget augue vel pulvinar. Integer ultricies euismod varius.
     </p>
 </div>
-<div class="skills">
+<div id="skills">
+    <h2 class="ui header titles">Mes compétences</h2>
     <div class="skill-Left">
         <img src="assets/img/logo-symfony.png" class="ui small circular image">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
@@ -48,5 +77,90 @@
         <img src="assets/img/angular-logo.png" class="ui small circular image">
     </div>
 </div>
+<div id="achievements">
+    <h2 class="ui header titles">Mes réalisations</h2>
+    <div class="ui three column grid">
+        <div class="column">
+            <div class="ui segment">
+                <img src="assets/img/image.png" class="ui small circular image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui segment">
+                <img src="assets/img/image.png" class="ui small circular image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui segment">
+                <img src="assets/img/image.png" class="ui small circular image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="experiencesSchooling">
+    <div class="ui equal width grid">
+        <div class="column">
+            <h2 class="ui header titles">Mes expériences</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.</p>
+        </div>
+        <div class="column">
+            <h2 class="ui header titles">Ma scolarité</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.</p>
+        </div>
+    </div>
+</div>
+<div id="hoobies">
+    <h2 class="ui header">Mes centres d'intérêts</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
+        Donec hendrerit, elit convallis porta volutpat, dui ex placerat mi, ac accumsan nulla turpis in ex. Cras ac augue magna. Quisque ut bibendum augue.
+        Etiam fermentum consequat porttitor. Nullam molestie ullamcorper dolor, non porta libero molestie in.
+        Aenean dignissim eget augue vel pulvinar. Integer ultricies euismod varius.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat. Donec hendrerit, elit convallis porta volutpat, dui ex placerat mi,
+        ac accumsan nulla turpis in ex. Cras ac augue magna. Quisque ut bibendum augue.
+        Etiam fermentum consequat porttitor. Nullam molestie ullamcorper dolor, non porta libero molestie in.
+        Aenean dignissim eget augue vel pulvinar. Integer ultricies euismod varius.
+    </p>
+</div>
+<div id="contact">
+    <h2 class="ui header titles">Contactez moi</h2>
+    <form class="ui form">
+        <div class="field">
+            <label>Nom</label>
+            <input type="text" name="first-name" placeholder="Nom">
+        </div>
+        <div class="field">
+            <label>Prénom</label>
+            <input type="text" name="first-name" placeholder="Prénom">
+        </div>
+        <div class="field">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Email">
+        </div>
+        <div class="field">
+            <label>Votre message</label>
+            <textarea name="message" rows="2"></textarea>
+        </div>
+        <button class="ui button" type="submit">Envoyer</button>
+    </form>
+</div>
 </body>
+<footer id="footer">
+    <div class="ui equal width grid">
+        <div class="column">
+            <p>Made by Claire Denis</p>
+        </div>
+        <div class="column">
+            <p>Tel : 06.42.92.29.13</p>
+            <p>Mail : <a href="mailto:claire.denis@viacesi.fr">claire.denis@viacesi.fr</a></p>
+        </div>
+    </div>
+</footer>
 </html>
