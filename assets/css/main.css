@@ -37,9 +37,13 @@
 
 #about, #skills, #achievements, #experiencesSchooling, #hoobies, #contact, #footer div {
     margin-top: 3em;
-    margin-right: 10em;
-    margin-left: 10em;
+    margin-right: 15em;
+    margin-left: 15em;
     text-align: justify;
+}
+
+#experiencesText, #schoolText{
+    margin-left: 8em;
 }
 
 #achievements img {
@@ -56,8 +60,4 @@
 
 footer {
     /*background-color: #C95D63;*/
-}
-
-body{
-    background-image: url("C:\xampp\htdocs\personal-website\assets\img\backdrop-21534_1920.jpg");
 }
