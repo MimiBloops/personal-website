@@ -35,11 +35,18 @@
     margin-top: 1em;
 }
 
-#about, #skills, #achievements, #experiencesSchooling, #hoobies, #contact, #footer div {
+#about, #skills, #achievements, #experiencesSchooling, #hoobies, #contact {
     margin-top: 3em;
-    margin-right: 15em;
-    margin-left: 15em;
+    margin-right: 20em;
+    margin-left: 20em;
     text-align: justify;
+}
+
+#footer div {
+  margin-top: 3em;
+  margin-right: 15em;
+  margin-left: 15em;
+  text-align: justify;
 }
 
 #experiencesText, #schoolText{
