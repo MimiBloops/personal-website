@@ -20,63 +20,54 @@
   <div class="navigation row">
     <div class="large-12 columns">
       <ul class="menu align-center">
-        <li><a class="is-active" href="#about">A propos de moi</a></li>
-        <li><a class="" href="#skills">Mes compétences</a></li>
-        <li><a class="" href="#achievements">Mes réalisations</a></li>
-        <li><a class="" href="#experiences">Mes expériences</a></li>
-        <li><a class="" href="#school">Ma scolarité</a></li>
-        <li><a class="" href="#interest">Centres d'intérêts</a></li>
-        <li><a class="" href="#contact">Contact</a></li>
+        <li><a class="is-active" href="#about" tkey="navAbout"></a></li>
+        <li><a class="" href="#skills" tkey="navSkills"></a></li>
+        <li><a class="" href="#achievements" tkey="navWork"></a></li>
+        <li><a class="" href="#experiences" tkey="navExp"></a></li>
+        <li><a class="" href="#school" tkey="navSchool"></a></li>
+        <li><a class="" href="#interest" tkey="navHobbies"></a></li>
+        <li><a class="" href="#contact" tkey="navContact"></a></li>
       </ul>
+      <div class="language">
+        <img src="assets/img/france.svg" class="flag" alt="">
+        <label class="switch">
+          <input type="checkbox" id="country" onclick="location.reload();">
+          <span class="slider"></span>
+        </label>
+        <img src="assets/img/usa.svg" class="flag" alt="">
+      </div>
     </div>
   </div>
-
-
-  <i class="fas fa-university"></i>
-  <i class="fas fa-info"></i>
-  <i class="fas fa-spinner fa-pulse"></i>
-
 
   <div class="row">
     <div class="profile small-12 columns">
       <img src="assets/img/profilePicture.jpg" class="thumbnail profilePicture" >
-      <h1>Claire Denis</h1>
+      <h1 tkey="name"></h1>
       <a href="https://www.linkedin.com/in/claire-denis-23a094106/"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://github.com/mimimario"><i class="fab fa-github-alt"></i></a> </br>
-      <button class=" button">Télécharger mon cv</button>
+      <button class="button" tkey="resumeDownload"></button>
     </div>
   </div>
 
   <div class="about row">
     <div class="small-12 columns">
-      <h2>A propos de moi</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
-        Donec hendrerit, elit convallis porta volutpat, d ex placerat mi, ac accumsan nulla turpis in ex. Cras ac augue magna. Qsque ut bibendum augue.
-        Etiam fermentum consequat porttitor. Nullam molestie ullamcorper dolor, non porta libero molestie in.
-        Aenean dignissim eget augue vel pulvinar. Integer ultricies esmod varius.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat. Donec hendrerit, elit convallis porta volutpat, d ex placerat mi,
-        ac accumsan nulla turpis in ex. Cras ac augue magna. Qsque ut bibendum augue.
-        Etiam fermentum consequat porttitor. Nullam molestie ullamcorper dolor, non porta libero molestie in.
-        Aenean dignissim eget augue vel pulvinar. Integer ultricies esmod varius.
-      </p>
+      <h2 tkey="aboutTitle"></h2>
+      <p tkey="aboutDetail"></p>
     </div>
   </div>
 
   <div class="row skills">
     <div class="small-12 columns">
-      <h2>Mes compétences</h2>
+      <h2 tkey="skillsTitle"></h2>
       <img src="assets/img/logo-symfony.png" class=" small circular image">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
-        Donec hendrerit, elit convallis porta volutpat, d ex placerat mi, ac accumsan nulla turpis in ex. Cras ac augue magna. Qsque ut bibendum augue.
-        Etiam fermentum consequat porttitor. Nullam molestie ullamcorper dolor, non porta libero molestie in.
-      </p>
+      <p tkey="skillsDetail"></p>
     </div>
   </div>
 
   <div class="achievements row">
     <div class="small-12 columns">
-      <h2>Mes réalisations</h2>
-      <p>Blablablabalabal</p>
+      <h2 tkey="achievementsTitle"></h2>
+      <p tkey="achievementsDetail"></p>
     </div>
   </div>
 
@@ -172,6 +163,8 @@
     </div>
   </div>
 
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="lang.js"></script>
 </body>
 
 <footer class="footer row">
