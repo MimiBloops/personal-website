@@ -32,7 +32,7 @@
         <img src="assets/img/france.svg" class="flag" alt="">
         <label class="switch">
           <input type="checkbox" id="country" onclick="location.reload();">
-          <span class="slider"></span>
+          <span class="slider round"></span>
         </label>
         <img src="assets/img/usa.svg" class="flag" alt="">
       </div>
@@ -64,19 +64,90 @@
     </div>
   </div>
 
-  <div class="achievements row">
-    <div class="small-12 columns">
-      <h2 tkey="achievementsTitle"></h2>
-      <p tkey="achievementsDetail"></p>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="assets/img/angular-logo.png" style="width:100%">
+      <div class="text">Caption Text</div>
     </div>
+
+    <div class="mySlides fade">
+      <img src="assets/img/logo-symfony.png" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="assets/img/logo-symfony.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
 
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
 
-  <div class="experiences row">
-    <div class="small-12 columns">
-      <h2>Mes expériences</h2>
-      <img src="assets/img/onepoint.png/">
-      <a class="header" href="https://www.groupeonepoint.com/#">OnePoint</a>Pessac - Janvier 2017 à Avril 2017
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+<div class="achievements row">
+  <div class="small-12 columns">
+    <h2 tkey="achievementsTitle"></h2>
+    <p tkey="achievementsDetail"></p>
+  </div>
+</div>
+
+
+<div class="experiences row">
+  <div class="small-12 columns">
+    <h2>Mes expériences</h2>
+    <img src="assets/img/onepoint.png/">
+    <a class="header" href="https://www.groupeonepoint.com/#">OnePoint</a>Pessac - Janvier 2017 à Avril 2017
+    <div class="description">
+      <div class=" bulleted list">
+        <div class="item">Réalisation de site internet sous Wordpress</div>
+        <div class="item">Modification de thème et module en PHP</div>
+        <div class="item">Relation avec le client</div>
+      </div>
+    </div>
+    <img src="assets/img/novantic.jpeg/">
+    <div class="content">
+      <a class="header" href="http://www.novantic.fr/">Novantic Solutions</a>Saint Jean-d'Illac - Mai 2016 à Jllet 2016
       <div class="description">
         <div class=" bulleted list">
           <div class="item">Réalisation de site internet sous Wordpress</div>
@@ -84,87 +155,78 @@
           <div class="item">Relation avec le client</div>
         </div>
       </div>
-      <img src="assets/img/novantic.jpeg/">
-      <div class="content">
-        <a class="header" href="http://www.novantic.fr/">Novantic Solutions</a>Saint Jean-d'Illac - Mai 2016 à Jllet 2016
-        <div class="description">
-          <div class=" bulleted list">
-            <div class="item">Réalisation de site internet sous Wordpress</div>
-            <div class="item">Modification de thème et module en PHP</div>
-            <div class="item">Relation avec le client</div>
-          </div>
-        </div>
-      </div>
-      <img src="assets/img/aldebarande.png/">
-      <div class="content">
-        <a class="header" href="http://aldebarande.fr/">Aldébarande</a>Angoulême - Septembre 2015 - Novembre 2015
-        <div class="description">
-          <div class=" bulleted list">
-            <div class="item">Programmation de module en Python</div>
-            <div class="item">Personnalisation CMS en PHP, C# et Python</div>
-            <div class="item">Création et animation des réseaux sociaux (Twitter, Facebook)</div>
-          </div>
+    </div>
+    <img src="assets/img/aldebarande.png/">
+    <div class="content">
+      <a class="header" href="http://aldebarande.fr/">Aldébarande</a>Angoulême - Septembre 2015 - Novembre 2015
+      <div class="description">
+        <div class=" bulleted list">
+          <div class="item">Programmation de module en Python</div>
+          <div class="item">Personnalisation CMS en PHP, C# et Python</div>
+          <div class="item">Création et animation des réseaux sociaux (Twitter, Facebook)</div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="row school">
-    <div class="small-12 columns">
-      <h2>Ma scolarité</h2>
-      <div class="content">
-        <div class="header">Exia Cesi école d'ingénieur informatique</div>Septembre 2014 à Aujourd'h
-        <div class="description">Floated icons are by default top aligned. To have an icon top aligned try this example.</div>
+<div class="row school">
+  <div class="small-12 columns">
+    <h2>Ma scolarité</h2>
+    <div class="content">
+      <div class="header">Exia Cesi école d'ingénieur informatique</div>Septembre 2014 à Aujourd'h
+      <div class="description">Floated icons are by default top aligned. To have an icon top aligned try this example.</div>
+    </div>
+    <div class="content">
+      <div class="header">Bac STI2D option SIN</div>Jn 2014
+      <div class="description">Sciences et Technologies de l'industrie et du développement durable Spécialité Systèmes d'Information Numérique</div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="interest small-12 columns">
+    <h2>Mes centres d'intérêts</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
+      Donec hendrerit, elit convallis porta volutpat, d ex placerat mi, ac accumsan nulla turpis in ex. Cras ac augue magna. Qsque ut bibendum augue.
+      Etiam fermentum consequat porttitor. Nullam molestie ullamcorper dolor, non porta libero molestie in.
+      Aenean dignissim eget augue vel pulvinar. Integer ultricies esmod varius.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat. Donec hendrerit, elit convallis porta volutpat, d ex placerat mi,
+      ac accumsan nulla turpis in ex. Cras ac augue magna. Qsque ut bibendum augue.
+      Etiam fermentum consequat porttitor. Nullam molestie ullamcorper dolor, non porta libero molestie in.
+      Aenean dignissim eget augue vel pulvinar. Integer ultricies esmod varius.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="contact small-12 columns">
+    <h2>Contactez moi</h2>
+    <form class=" form">
+      <div class="field">
+        <label>Nom</label>
+        <input type="text" name="first-name" placeholder="Nom">
       </div>
-      <div class="content">
-        <div class="header">Bac STI2D option SIN</div>Jn 2014
-        <div class="description">Sciences et Technologies de l'industrie et du développement durable Spécialité Systèmes d'Information Numérique</div>
+      <div class="field">
+        <label>Prénom</label>
+        <input type="text" name="first-name" placeholder="Prénom">
       </div>
-    </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="text" name="email" placeholder="Email">
+      </div>
+      <div class="field">
+        <label>Votre message</label>
+        <textarea name="message" rows="2"></textarea>
+      </div>
+      <button class=" button" type="submit">Envoyer</button>
+    </form>
   </div>
+</div>
 
-  <div class="row">
-    <div class="interest small-12 columns">
-      <h2>Mes centres d'intérêts</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat.
-        Donec hendrerit, elit convallis porta volutpat, d ex placerat mi, ac accumsan nulla turpis in ex. Cras ac augue magna. Qsque ut bibendum augue.
-        Etiam fermentum consequat porttitor. Nullam molestie ullamcorper dolor, non porta libero molestie in.
-        Aenean dignissim eget augue vel pulvinar. Integer ultricies esmod varius.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Fusce vitae dictum nunc. Vestibulum bibendum nulla et nunc ullamcorper volutpat. Donec hendrerit, elit convallis porta volutpat, d ex placerat mi,
-        ac accumsan nulla turpis in ex. Cras ac augue magna. Qsque ut bibendum augue.
-        Etiam fermentum consequat porttitor. Nullam molestie ullamcorper dolor, non porta libero molestie in.
-        Aenean dignissim eget augue vel pulvinar. Integer ultricies esmod varius.
-      </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="contact small-12 columns">
-      <h2>Contactez moi</h2>
-      <form class=" form">
-        <div class="field">
-          <label>Nom</label>
-          <input type="text" name="first-name" placeholder="Nom">
-        </div>
-        <div class="field">
-          <label>Prénom</label>
-          <input type="text" name="first-name" placeholder="Prénom">
-        </div>
-        <div class="field">
-          <label>Email</label>
-          <input type="text" name="email" placeholder="Email">
-        </div>
-        <div class="field">
-          <label>Votre message</label>
-          <textarea name="message" rows="2"></textarea>
-        </div>
-        <button class=" button" type="submit">Envoyer</button>
-      </form>
-    </div>
-  </div>
-
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="lang.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="lang.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 
 <footer class="footer row">
