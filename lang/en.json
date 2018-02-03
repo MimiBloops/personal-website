@@ -1,0 +1,19 @@
+{
+  "navAbout" : "About me",
+  "navSkills" : "My skills",
+  "navWork" : "My achievements",
+  "navExp" : "My experiences",
+  "navSchool" : "My scolarity",
+  "navHobbies" : "Hoobies",
+  "navContact" : "Contact",
+
+  "name" : "Claire Denis",
+  "resumeDownload" : "Download my resume",
+  "aboutTitle" : "About me",
+  "aboutDetail" : "Lorem ipsum dolor sit amet.",
+
+  "skillsTitle" : "My skills",
+  "skillsDetail" : "Lorem ipsum dolor sit amet.",
+  "achievementsTitle" : "My achievements",
+  "achievementsDetail" : "Lorem ipsum dolor sit amet."
+}
